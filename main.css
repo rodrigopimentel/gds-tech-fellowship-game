@@ -1,0 +1,153 @@
+h2 {
+    display: block;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    user-select: none;
+}
+
+body {
+    background-color: #0A2239;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1rem 0 0.8rem 0;
+}
+
+p {
+    font-size: 4rem;
+}
+
+main {
+    width: 64rem;
+    margin: 1rem auto;
+}
+
+game-view {
+    display: grid;
+    text-align: center;
+    grid-template: 1fr / repeat(3, 1fr);
+}
+
+game-controls {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selection-view {
+    display: flex;
+    width: 100%;
+    height: 25rem;
+    background-color: #1D84B5;
+    border: 0.2rem solid #ffffff;
+    border-radius: 1rem;
+}
+
+#play-btn, #restart-button {
+    width: 25rem;
+    height: 5rem;
+    font-size: 2rem;
+    background-color: #008000;
+    box-shadow: 0.3rem 0.3rem 0.1rem black;
+    border: none;
+    color: #ffffff;
+    border-radius: 1rem;
+}
+
+#restart-button {
+    margin: 1rem auto;
+}
+
+#play-btn:hover, #restart-button:hover {
+    cursor: pointer;
+    background-color: #015501;
+}
+
+#play-btn:active, #restart-button:active {
+    margin: 0.3rem auto 0 auto;
+    box-shadow: none;
+}
+
+#restart-button:active {
+    margin: 1.3rem auto 0 auto;
+}
+
+cpu-selection {
+    display: flex;
+    font-size: 15rem;
+    align-items: center;
+    justify-content: center;
+}
+
+player-selection {
+    display: flex;
+    font-size: 15rem;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50rem;
+}
+
+#control-header {
+    text-align: center;
+}
+
+#play-li {
+    margin: 0 auto;
+}
+
+#control-list {
+    margin: 0 auto;
+}
+
+#rock-button, #paper-button, #scissors-button {
+    display: flex;
+    font-size: 6rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color: #1D84B5;
+}
+
+#rock-button:hover, #paper-button:hover, #scissors-button:hover {
+    cursor: pointer;
+    background-color: #124b66;
+}
+
+.stats-circ {
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.stats-view {
+    margin: 0 0 1rem 0;
+}

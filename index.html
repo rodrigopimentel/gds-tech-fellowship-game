@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <title>rock paper scissors</title>
+</head>
+<body>
+    <main>
+        <h1>🪨rock 📄paper ✂️scissors</h1>
+        <section>
+            <game-view>
+                <player-view class="view">
+                    <h2>you</h2>
+                    <player-stats class="stats-view">
+                        <player-circ-1 class="stats-circ"></player-circ-1>
+                        <player-circ-2 class="stats-circ"></player-circ-2>
+                        <player-circ-3 class="stats-circ"></player-circ-3>
+                    </player-stats>
+                    <player-selection class="selection-view"><player-play-icon></player-play-icon></player-selection>
+                </player-view>
+                <center-view class="view">
+                    <p>vs.</p>
+                </center-view>
+                <cpu-view class="view">
+                    <h2>cpu</h2>
+                    <cpu-stats class="stats-view">
+                        <cpu-circ-1 class="stats-circ"></cpu-circ-1>
+                        <cpu-circ-2 class="stats-circ"></cpu-circ-2>
+                        <cpu-circ-3 class="stats-circ"></cpu-circ-3>
+                    </cpu-stats>
+                    <cpu-selection class="selection-view"><cpu-play-icon></cpu-play-icon></cpu-selection>
+                </cpu-view>
+            </game-view>
+            <game-controls>
+                <div id="control-header"></div>
+                <ul id="control-list">
+                    <li id="play-li"><button id="play-btn">play</button></li>
+                </ul>
+            </game-controls>
+        </section>
+    </main>
+</body>
+<script src="app.js"></script>
+</html>
