@@ -132,12 +132,19 @@ ul {
     width: 10rem;
     border-radius: 50%;
     background-color: #1D84B5;
+    box-shadow: 0.1rem 0.3rem 0.3rem #000000;
 }
 
 #rock-button:hover, #paper-button:hover, #scissors-button:hover {
     cursor: pointer;
     background-color: #124b66;
 }
+
+#rock-button:active, #paper-button:active, #scissors-button:active {
+    margin: 0.3rem 0 0 0;
+    box-shadow: none;
+}
+
 
 .stats-circ {
     display: inline-block;
